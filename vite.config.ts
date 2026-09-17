@@ -2,7 +2,6 @@
 /// <reference types="vite/client" />
 import react from "@vitejs/plugin-react";
 import { resolve } from 'node:path';
-import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { defineConfig } from "vite";
 
 // https://vite.dev/config/
@@ -14,12 +13,7 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  plugins: [tanstackRouter({
-    target: "react",
-    autoCodeSplitting: true,
-    routesDirectory: "./app/routes",
-    generatedRouteTree: "./app/routeTree.gen.ts"
-  }), react()],
+  plugins: [react()],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
