@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+
+overrides:
+  '@tanstack/react-router': 1.168.10
+  '@tanstack/router-core': 1.168.9
