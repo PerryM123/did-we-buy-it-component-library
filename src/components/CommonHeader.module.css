@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+  color: #f1582c;
+}
+
+.menuButton {
+  color: #374151;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background-color: rgb(0 0 0 / 20%);
+  transition: opacity 300ms;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlayOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 18rem;
+  background-color: #fff;
+  z-index: 50;
+  transition: transform 300ms;
+  transform: translateX(100%);
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.drawerTitle {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #f1582c;
+}
+
+.closeButton {
+  color: #6b7280;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.nav {
+  margin-top: 0.25rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #f3f4f6;
+  color: #1f2937;
+  transition: color 150ms;
+}
+
+.navLink:hover {
+  color: #6b7280;
+}
+
+.chevron {
+  color: #9ca3af;
+  font-size: 1.125rem;
+}
