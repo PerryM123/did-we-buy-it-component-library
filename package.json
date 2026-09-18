@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "tsc -b && vite build",
-    "prepare": "vite build --mode production",
+    "prepare": "vite build",
     "lint": "oxlint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
