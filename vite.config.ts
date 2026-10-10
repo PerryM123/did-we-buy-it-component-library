@@ -4,7 +4,6 @@ import react from "@vitejs/plugin-react";
 import { resolve } from 'node:path';
 import { defineConfig } from "vite";
 import dts from 'vite-plugin-dts';
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 // https://vite.dev/config/
 import path from 'node:path';
@@ -21,8 +20,7 @@ export default defineConfig({
       tsconfigPath: 'tsconfig.app.json',
       include: ['src'],
       exclude: ['src/**/*.stories.tsx']
-    }),
-    cssInjectedByJsPlugin()
+    })
   ],
   build: {
     lib: {
